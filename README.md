@@ -6,10 +6,14 @@ implements different version of *memset()* functions along with driver sources
 implement different ways to link or load library functions by carrying out
 different parts of assignments.
 
+
+## Prerequisites
+This assignment requires access to a machine that has a Linux Operating System. This assignment is run on the Linux terminal command line interface.
+
 ## Part 0 (0 point - warmup)
 
 This part implements a single source version of memsets testcode. Run the
-following command to see it running. 
+following command to see it running:
 
 ```sh
 $ make part0
@@ -24,8 +28,11 @@ executable from multiple sources by linking object files. Please fill in
 (1) Compile into objects files (driver1.o, memsets.o), and (2) link them into an
 output executable (part1).
 
-To run this part, type the command make part1 in the terminal
+To run this part, type the following command in the terminal:
 
+```sh
+$ make part1
+```
 
 ## Part 2: Creating a static library (2pt)
 
@@ -38,7 +45,11 @@ You will fill in `part2` target of Makefile.
 the produced executable.
 
 
-To run this part, type the command make part2 in the terminal
+To run this part, type the following command in the terminal:
+
+```sh
+$ make part2
+```
 
 ## Part 3: Creating a dynamic library (3pt)
 
@@ -48,8 +59,12 @@ Makefile (target `part3`) to carry out the following steps.
 (1) Compile into objects files, (2) package memsets.o into an shared library (say libmemsets.so),
 (3) compile driver1.c into an output executable (part3), and (4) dynamically link shared library to run the program.
 
-To run this part, type the command make part3 in the terminal
+To run this part, type the following command in the terminal:
 
+
+```sh
+$ make part3
+```
 ## Part 4: Dynamically load a library (3pt)
 
 For this part of assignment, you will modify driver4.c to use functions from
@@ -57,7 +72,12 @@ For this part of assignment, you will modify driver4.c to use functions from
 (`libmemsets.so`) from part3 at runtime. Fix driver4.c to replace
 __replace_me__ to appropriate variables and update Makefile accordingly. 
 
-To run this part, type the command make part4 in the terminal
+To run this part, type the following command in the terminal:
+
+
+```sh
+$ make part4
+```
 
 ## Part 5: Library interposing with LD_PRELOAD (bonus 5pt)
  
@@ -65,7 +85,10 @@ This assignment is again based on part3. While you run the output executable
 from part3, you will intercept library loading (LD_PRELOAD) to replace memset()
 from libc library to something else (e.g., memset1).
 
-To run this part, type the command make part5 in the terminal
+To run this part, type the following command in the terminal:
 
+```sh
+$ make part5
+```
 
 
